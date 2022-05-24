@@ -1,39 +1,126 @@
 /*
 COLORS
+Primary colors:
+Blue 1 #5999D4
+Yellow #FBA01D
+Ivory #F0E4D8
+Green 1 #719D48
 
-Primary Color : 
-Secondary Color : 
+Secondary colors:
+Blue 2 #0F4C81
+Dark Orange #E86826
+Light Black #272B2E
+Green 2 #606C38
+
+Font:
+(Google font) Heebo
+Header 1      fs: 2.25em  fw: 700 lh: 1.5
+Header 2      fs: 2.00em  fw: 700 lh: 1.5
+Header 3      fs: 1.75em  fw: 600 lh: 1.5
+Header 4      fs: 1.50em  fw: 900 lh: 1.7
+Body          fs: 18-20px fw:     lh: 1.7
+Button        fs: fw: lh: 
+Ext Hyperlink fs:16px  fw: lh:
 
 */
+
 body {
     font-family: 'Heebo', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 h1 {
-    font-size: 2.75em;
-    font-weight: 600;
+    font-size: 2.25em;
+    font-weight: 700;
+    line-height: 1.5;
 }
 h2 {
-    font-size: 2.25em;
-    font-weight: 600;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1.5;
 }
 h3 {
-    font-size: 2em;
+    font-size: 1.75em;
     font-weight:600;
+    line-height: 1.5;
 }
 h4 {
-    font-size: 1.75em;
-    font-weight: 500;
-    line-height: 1.4;
+    font-size: 1.5em;
+    font-weight: 900;
 }
 h5 {
-    font-size: 1.25em;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+/* h6 {
     font-weight: 500;
     line-height: 1.4;
+}  */
+img {
+    width: 100%;
 }
-h6 {
+a {
+    color: #5999D4;
     font-weight: 500;
-    line-height: 1.4;
+    text-decoration: none;
 }
+
+/* a:visited {
+    color: #719D48;
+} */
+
+a:hover, a:active {
+    color: #0F4C81;
+    text-decoration: underline;
+}
+
+.menu_current {
+    font-weight: 600;
+    color: #0F4C81;
+}
+
+.button {
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 10px;
+    transition: 0.2s opacity;
+}
+
+.view_more, .view_more:visited {
+    background-color: #f0e4d8;
+    color: #272b2e;
+    border-bottom: 3px solid #b3aaa1; 
+}
+
+/* .view_more:hover {
+    background-color: #FBA01D;
+    color: #FFFFFF;
+    text-decoration:none;
+    border-bottom: 3px solid #a46814; 
+} */
+
+.view_more:hover .view_more:active {
+    background-color:  #272b2e;
+    color: #f0e4d8;
+    text-decoration:none;
+    border-bottom: 3px solid  #b3aaa1; 
+} 
+
+.b_general, .b_general:visited {
+    background-color: #3c87cd;
+    border-bottom: 3px solid #0F4C81; 
+}
+
+.b_general:hover, .b_general:active {
+    background-color: #0F4C81;
+    color: #ffffff;
+    text-decoration:none;
+    border-bottom: 3px solid #3c87cd; 
+}
+
