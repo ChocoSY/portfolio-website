@@ -4,24 +4,21 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta charset="utf-8">
         <title> SY Lee's Portfolio </title>
-        <style>
-            code {
-                color : #3676C9
-            }
-        </style>
     </head>
 
     <body>
         <header>
             <div>
-                <img src="img/Logo.png" alt="Soyeon's Portfolio">
-                <a href="#"> Sy Lee </a>
+                <a href="#">
+                    <img src="img/logo.png" alt="Soyeon's Portfolio">
+                    Sy Lee 
+                </a>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Work</a></li>
+                        <li><a href="index.html" class="menu_current">Work</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -31,15 +28,14 @@
 
         <main>
             <div>
-                <div>
+                <div id="self_intro_short">
                     <!--hero section-->
-                    <h3>
+                    <h2>
                         Hi! My name is Soyeon L.
+                    </h2>
+                    <h3>
+                        I'm a UI designer and researcher from Canada.
                     </h3>
-                    <h4>
-                        <br>
-                        <span>I'm a UI designer and researcher from Canada.</span>
-                    </h4>
                     
                     <p>
                         I am based at beautiful city in Canada BC.
@@ -51,8 +47,8 @@
                     </p>
                 </div>
 
-                <div>
-                    <h2><code>My Works</code></h2>
+                <div id="work_list">
+                    <h2>My Works</h2>
 
                     <div>
                         <div>
@@ -62,7 +58,7 @@
                             </picture>
                         </div>
                         <div>
-                            <h3>SLAN</h3>
+                            <h4>SLAN</h4>
                             <p>
                                 Saving huge amount of money sounds stressful and complicated
                                 <br>but with personal financial assistant,
@@ -71,7 +67,7 @@
                                 <br>so the strategy of saving will be planned differently by each case to provide
                                 more personalized experience.
                             </p>
-                            <a href="slan.html"> view project </a>
+                            <a href="slan.html" class="button view_more"> view project </a>
                             <br>
                         </div>
                     </div>
@@ -84,7 +80,7 @@
                             </picture>
                         </div>
                         <div>
-                            <h3>Cookease</h3>
+                            <h4>Cookease</h4>
                             <p>
                                 Cookease is a recipe web app which allows users who are interested in cooking 
                                 <br>to share and to write their recipe ideas. 
@@ -93,7 +89,7 @@
                                 <br>Users can trust this web app since they are asked to add their profile 
                                 <br>which can keep users' words and attitudes appropriate to others.
                             </p>
-                            <a href="#"> view project </a>
+                            <a href="cookease.html" class="button view_more"> view project </a>
                             <br>
                         </div>
                     </div>
@@ -106,14 +102,14 @@
                             </picture>
                         </div>
                         <div>
-                            <h3>Better d.</h3>
+                            <h4>Better d.</h4>
                             <p>
                                 Better d. is the app that users can use any where and any time to track their productivity.
                                 <br>Users can add tasks and record how long it takes them to finish each task and the total time. 
                                 <br>They can also create a group where each member can view other members' task lists, 
                                 and this will keep users motivated.
                             </p>
-                            <a href="#"> view project </a>
+                            <a href="betterd.html" class="button view_more"> view project </a>
                             <br>
                         </div>
                     </div>
@@ -126,7 +122,7 @@
                             </picture>
                         </div>
                         <div>
-                            <h3>MoCord</h3>
+                            <h4>MoCord</h4>
                             <p>
                                 MoCord is a diary app which  can be used in various ways 
                                 <br>such as journaling, scheduling, or memo etc.
@@ -135,7 +131,7 @@
                                 <br>but want to keep the feeling of using physical diary.
                                 
                             </p>
-                            <a href="#"> view project </a>
+                            <a href="mocord.html" class="button view_more"> view project </a>
                             <br>
                         </div>
                     </div>
@@ -152,7 +148,7 @@
                     <br>please contact me through the links below.
                 </p>
                 <div>
-                    <a href="mailto:dnjzm34 [at] gmail.com">send email</a>
+                    <a href="mailto:dnjzm34 [at] gmail.com" class="button b_general">send email</a>
                 </div>
                 <div>
                     <a href="tel:123-456-7890">
