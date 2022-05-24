@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta charset="utf-8">
         <title> About SY Lee </title>
     </head>
@@ -8,12 +12,12 @@
     <body>
         <header>
             <div>
-                <img src="img/Logo.png" alt="Soyeon's Portfolio">
+                <img class="logo" src="img/logo.png" alt="Soyeon's Portfolio" >
                 <a href="#"> Sy Lee </a>
                 <nav>
                     <ul>
                         <li><a href="index.html">Work</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html" class="menu_current">About</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -23,9 +27,7 @@
         <main>
             <div>
                 <div>
-                    <h1>
-                        About
-                    </h1>
+                    <h2>About</h2>
                 </div>
             </div>
 
@@ -36,38 +38,38 @@
                         <img src="img/ponyo016.jpg" alt="Sy L's profile photo">
                     </picture>
                     <div>
-                        <div>
+                        <div id="self_intro">
                             <h2>My Story</h2>
-                            <h3>Where I am based</h3>
+                            <h5>Where I am based</h5>
                             <p>
                                 I am based in Canada BC currently. I was born and grew up in Korea.
                             </p>
-                            <h3>How I spend my free time</h3>
+                            <h5>How I spend my free time</h5>
                             <p>
                                 I spend most of my free time on journaling which helps me organize my thoughts and feelings.
                                 <br>When I do not feel like wirting, I binge watch Netflix dramas. 
-                                <br>I prefer drama to movie since it describe each character's feeling deeper.
+                                I prefer drama to movie since it describes each character's feeling deeper.
                             </p>
-                            <h3>Fun fact about me</h3>
+                            <h5>Fun fact about me</h5>
                             <p>
                                 I am diving into a digital world by developing my skill in UI/UX. 
-                                <br>However, I still love pens and papers. 
-                                <br>One of the ways I relieve my stress is doing stationery shopping. 
+                                <br>However, I love pens and papers. 
+                                One of the ways I relieve my stress is doing stationery shopping. 
                             </p>
-                            <h3>My professional experience</h3>
+                            <h5>My professional experience</h5>
                             <p>
-                                I studied mathematics at university because I loved (I still love) dealing with numbers and wanted to become a teacher. 
-                                While majoring in Mathematics, I studied Japanese as well, since I've been loving their stationeries since pre-school. 
-                                With some level of knowledge in Mathematics and Japanese, I have experience of tutoring both private and public in those fields. 
+                                I studied mathematics at university because I loved (and I still love) dealing with numbers and wanted to become a teacher. 
+                                <br> While majoring in Mathematics, I studied Japanese as well, as I've been loving their stationeries since pre-school. 
+                                <br> With some level of knowledge in Mathematics and Japanese, I have experience of tutoring both private and public in those fields. 
                             </p>
-                            <a href="SYLee_CV.pdf" target="_blank">Download my resume</a>
+                            <a href="SYLee_CV.pdf" target="_blank" class="button view_cv">View CV</a>
                         </div>
 
-                        <div>
+                        <div id="my_skills">
                             <h2>Skills & Tools</h2>
                             <div>
                                 <div>
-                                    <h3>Relevant Skills</h3>
+                                    <h5>Relevant Skills</h5>
                                     <ul>
                                         <li>UI design</li>
                                         <li>UX research</li>
@@ -75,7 +77,7 @@
                                     </ul>
                                 </div>
                                 <div>
-                                    <h3>Tools I use</h3>
+                                    <h5>Tools I use</h5>
                                     <ul>
                                         <li>Adobe XD</li>
                                         <li>Code Editor(Visual Studio Code)</li>
@@ -95,7 +97,7 @@
                     If my works are interesting and want to know more, 
                     <br>please contact me through the links below.</p>
                 <div>
-                    <a href="mailto:dnjzm34 [at] gmail.com">send email</a>
+                    <a href="mailto:dnjzm34 [at] gmail.com" class="button b_general">send email</a>
                 </div>
                 <div>
                     <a href="tel:123-456-7890">
