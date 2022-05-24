@@ -23,6 +23,12 @@ Button        fs: fw: lh:
 Ext Hyperlink fs:16px  fw: lh:
 
 */
+header {
+    background-color: #f0e4d8;
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 3px solid #0F4C81;
+}
 
 body {
     font-family: 'Heebo', sans-serif;
@@ -30,6 +36,14 @@ body {
     font-weight: 400;
     line-height: 1.7;
 }
+
+footer {
+    background-color: #f0e4d8;
+    padding: 10px;
+    margin: 10px;
+    border-top: 3px solid #0F4C81;
+}
+
 h1 {
     font-size: 2.25em;
     font-weight: 700;
@@ -61,8 +75,18 @@ img {
     width: 100%;
 }
 .logo {
-    max-width:60px;
-    max-height: 60px;
+    width: 7.5%;
+    height: 7.5%;
+}
+
+.icon {
+    width: 3%;
+    height: 3%;
+}
+
+.my_photo {
+    width: 30%;
+    height: 30%;
 }
 
 a {
@@ -89,10 +113,7 @@ a:hover, a:active {
     display: inline-block;
     color: #FFFFFF;
     font-weight: 700;
-    padding-left: 13px;
-    padding-right: 13px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding: 5px 13px;
     border-radius: 10px;
     transition: 0.2s opacity;
 }
