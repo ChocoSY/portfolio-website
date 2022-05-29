@@ -81,7 +81,7 @@ h4 {
 h5 {
     font-size: 1.5em;
     font-weight: 700;
-    margin: 16px 0;
+    margin: 0;
 }
 .logo_font {
     font-size: 1.75em;
@@ -117,6 +117,7 @@ img {
 .my_photo {
     width: 30%;
     height: 30%;
+    min-width: 290px;
 }
 
 a {
@@ -149,14 +150,12 @@ a:hover, a:active {
     color: #0F4C81;
     border-bottom: 3px solid #b3aaa1; 
 }
-
 /* .view_more:hover {
     background-color: #FBA01D;
     color: #FFFFFF;
     text-decoration:none;
     border-bottom: 3px solid #a46814; 
 } */
-
 .view_more:hover .view_more:active {
     background-color:  #272b2e;
     color: #f0e4d8;
@@ -164,11 +163,11 @@ a:hover, a:active {
     border-bottom: 3px solid  #b3aaa1; 
 } 
 
+
 .b_general, .b_general:visited {
     background-color: #3c87cd;
     border-bottom: 3px solid #0F4C81; 
 }
-
 .b_general:hover, .b_general:active {
     background-color: #0F4C81;
     color: #ffffff;
@@ -176,10 +175,11 @@ a:hover, a:active {
     border-bottom: 3px solid #3c87cd; 
 }
 
+.b_cv {
+    margin: 8px 0 20px 0;
+}
 /*
 LAYOUT STYLING
-
-
 */
 
 .container {
@@ -246,8 +246,18 @@ nav > ul > li > a {
 .question_tile {
     background-color: #fff8ef;
     border-radius:10px;
-    padding: 0 16px;
+    padding: 16px;
     margin: 8px 0;
+}
+.skill_tile {
+    background-color: #fff8ef;
+    border-radius:10px;
+    padding: 16px;
+    margin: 25px 0;
+}
+.skill_points {
     display: inline-block;
     max-width: 350px;
+    margin: 0 40px 0 0;
 }
+
