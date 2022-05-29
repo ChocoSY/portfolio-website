@@ -23,11 +23,22 @@ Button        fs: fw: lh:
 Ext Hyperlink fs:16px  fw: lh:
 
 */
+
+* {
+    box-sizing: border-box;
+}
 header {
     background-color: #f0e4d8;
-    padding: 10px;
-    margin: 10px;
+    padding: 15px;
+    /* margin: 0 15px; */
     border-bottom: 3px solid #0F4C81;
+    box-shadow: 0px 7px 10px rgba(50, 50, 50, 0.65);
+    position: fixed;
+    width:100%;
+}
+
+main {
+    padding-top: 166px;
 }
 
 body {
@@ -54,6 +65,9 @@ h2 {
     font-weight: 700;
     line-height: 1.5;
 }
+.subtitle {
+    text-align: center;
+}
 h3 {
     font-size: 1.75em;
     font-weight:600;
@@ -62,26 +76,41 @@ h3 {
 h4 {
     font-size: 1.5em;
     font-weight: 900;
+    margin: 16px 0;
 }
 h5 {
     font-size: 1.5em;
     font-weight: 700;
 }
+.logo_font {
+    font-size: 1.75em;
+    display: inline-block;
+}
 /* h6 {
     font-weight: 500;
     line-height: 1.4;
 }  */
+p {
+    margin: 16px 0;
+}
 img {
     width: 100%;
 }
 .logo {
     width: 7.5%;
     height: 7.5%;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 250px;
+    max-height: 250px;
 }
 
 .icon {
     width: 3%;
     height: 3%;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 5px;
 }
 
 .my_photo {
@@ -101,13 +130,9 @@ a {
 
 a:hover, a:active {
     color: #0F4C81;
-    text-decoration: underline;
 }
 
-.menu_current {
-    font-weight: 600;
-    color: #0F4C81;
-}
+
 
 .button {
     display: inline-block;
@@ -150,3 +175,69 @@ a:hover, a:active {
     border-bottom: 3px solid #3c87cd; 
 }
 
+/*
+LAYOUT STYLING
+
+
+*/
+
+.container {
+    padding: 0 15px;
+}
+.row {
+    margin: 25px 0;
+}
+.project_row {
+    background-color: #fff8ef;
+    border-radius:10px;
+}
+
+#self_intro_short {
+    background-color: #f9eee0;
+    padding: 20px 20px;
+    display: inline-block;
+    width: 100%
+}
+#self_intro_short h2 {
+    text-align: center;
+    /* margin: 0;
+    padding: 0.67em 0; */
+}
+
+nav > ul {
+    list-style-type: none;
+    /* margin:10px 0;  without this, there are top&bottom margins.. why?*/
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+}
+nav > ul > li {
+    display: inline-block;
+}
+nav > ul > li > a {
+    padding:0 7px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: min(6vw, 25px);
+}
+.menu {
+    /* display: inline-block; */
+    /* text-align: right; */
+    float: right;
+}
+.menu_current {
+    color: #0F4C81;
+    font-weight: 900;
+}
+
+.project_tile {
+    padding: 0 16px 16px 16px;
+    display: inline-block;
+    max-width: 450px;
+}
+.project_thumbnail {
+    display: inline-block;
+    max-width: 767px;
+    border-radius: 7px;
+    padding: 10px 8px 5px 8px;
+}
