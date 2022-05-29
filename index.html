@@ -6,19 +6,20 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta charset="utf-8">
+        <link rel="icon" href="img/logo.png">
         <title> SY Lee's Portfolio </title>
     </head>
 
     <body>
         <header>
-            <div>
-                <a href="#">
+            <div class="container">
+                <a href="index.html" class="logo_font">
                     <img src="img/logo.png" alt="Soyeon's Portfolio" class="logo">
-                    Sy Lee 
+                    SY Lee 
                 </a>
-                <nav>
+                <nav class="menu">
                     <ul>
-                        <li><a href="index.html" class="menu_current">Work</a></li>
+                        <li><a href="index.html" class="menu_current">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -27,8 +28,8 @@
         </header>
 
         <main>
-            <div>
-                <div id="self_intro_short">
+            <div  id="self_intro_short" class="container">
+                <div>
                     <!--hero section-->
                     <h2>
                         Hi! My name is Soyeon L.
@@ -41,30 +42,32 @@
                         I am based at beautiful city in Canada BC.
                         <br>I have a cultural background mostly in Korea and a little in Japan. 
                         <br>My professional background is mathematics.
-                        <br>But I am diving into a digital world by developing my skill in UI/UX.
+                        But I am diving into a digital world by developing my skill in UI/UX.
                         <br>I love pens and papers, so when I am not busy,
-                        <br>I usually spend my time on journaling. 
+                        I usually spend my time on journaling. 
                     </p>
                 </div>
+            </div>
 
+            <div class="container">
                 <div id="work_list">
-                    <h2>My Works</h2>
+                    <h2 class="subtitle">My Works</h2>
 
-                    <div>
-                        <div>
+                    <div class="row project_row">
+                        <div class="project_thumbnail">
                             <picture>
                                 <source srcset="img/slan/slan_intro.jpg" media="(max-width:767px)">
                                 <img src="img/slan/slan_intro@2x.jpg" alt="SLAN Budget app Intro">
                             </picture>
                         </div>
-                        <div>
+                        <div  class="project_tile">
                             <h4>SLAN</h4>
                             <p>
                                 Saving huge amount of money sounds stressful and complicated
-                                <br>but with personal financial assistant,
-                                <br>SLAN, in your hand, the process of saving will become simple, 
-                                <br>and it will give confidence to users. We consider every user's need seriously 
-                                <br>so the strategy of saving will be planned differently by each case to provide
+                                but with personal financial assistant,
+                                SLAN, in your hand, the process of saving will become simple, 
+                                and it will give confidence to users. We consider every user's need seriously 
+                                so the strategy of saving will be planned differently by each case to provide
                                 more personalized experience.
                             </p>
                             <a href="slan.html" class="button view_more"> view project </a>
@@ -72,41 +75,41 @@
                         </div>
                     </div>
 
-                    <div>
-                        <div>
+                    <div class="row project_row">
+                        <div class="project_thumbnail">
                             <picture>
                                 <source srcset="img/cookease/intro.jpg" media="(max-width:767px)">
                                 <img src="img/cookease/intro.jpg" alt="Cookease Recipe app Intro">
                             </picture>
                         </div>
-                        <div>
+                        <div class="project_tile">
                             <h4>Cookease</h4>
                             <p>
                                 Cookease is a recipe web app which allows users who are interested in cooking 
-                                <br>to share and to write their recipe ideas. 
-                                <br>This will let users give or get help with cooking, 
-                                <br>from preparation of ingredient to making delicious meal. 
-                                <br>Users can trust this web app since they are asked to add their profile 
-                                <br>which can keep users' words and attitudes appropriate to others.
+                                to share and to write their recipe ideas. 
+                                This will let users give or get help with cooking, 
+                                from preparation of ingredient to making delicious meal. 
+                                Users can trust this web app since they are asked to add their profile 
+                                which can keep users' words and attitudes appropriate to others.
                             </p>
                             <a href="cookease.html" class="button view_more"> view project </a>
                             <br>
                         </div>
                     </div>
 
-                    <div>
-                        <div>
+                    <div class="row project_row">
+                        <div class="project_thumbnail">
                             <picture>
                                 <source srcset="img/better_d/intro.png" media="(max-width:767px)">
                                 <img src="img/better_d/intro.png" alt="Better d. Productivity app Intro">
                             </picture>
                         </div>
-                        <div>
+                        <div class="project_tile">
                             <h4>Better d.</h4>
                             <p>
                                 Better d. is the app that users can use any where and any time to track their productivity.
-                                <br>Users can add tasks and record how long it takes them to finish each task and the total time. 
-                                <br>They can also create a group where each member can view other members' task lists, 
+                                Users can add tasks and record how long it takes them to finish each task and the total time. 
+                                They can also create a group where each member can view other members' task lists, 
                                 and this will keep users motivated.
                             </p>
                             <a href="betterd.html" class="button view_more"> view project </a>
@@ -114,21 +117,21 @@
                         </div>
                     </div>
 
-                    <div>
-                        <div>
+                    <div class="row project_row">
+                        <div class="project_thumbnail">
                             <picture>
                                 <source srcset="img/mocord/intro.jpg" media="(max-width:767px)">
                                 <img src="img/mocord/intro.jpg" alt="MoCord Diary app Intro">
                             </picture>
                         </div>
-                        <div>
+                        <div class="project_tile">
                             <h4>MoCord</h4>
                             <p>
                                 MoCord is a diary app which  can be used in various ways 
-                                <br>such as journaling, scheduling, or memo etc.
-                                <br>It is developed to let users have similar experience of using physical diary.
-                                <br>So this app will satisfy users who want to try digital diary
-                                <br>but want to keep the feeling of using physical diary.
+                                such as journaling, scheduling, or memo etc.
+                                It is developed to let users have similar experience of using physical diary.
+                                So this app will satisfy users who want to try digital diary
+                                but want to keep the feeling of using physical diary.
                                 
                             </p>
                             <a href="mocord.html" class="button view_more"> view project </a>
@@ -137,20 +140,16 @@
                     </div>
                 </div>
             </div>
-            
         </main>
 
         <footer id="contact">
-            <div>
+            <div class="container">
                 <h2>Get In Touch</h2>
                 <p>
                     If my works are interesting and want to know more, 
-                    <br>please contact me through the links below.
+                    please contact me through the links below.
                 </p>
-                <div>
-                    <a href="mailto:dnjzm34 [at] gmail.com" class="button b_general">send email</a>
-                </div>
-                <div>
+                <div class="row">
                     <a href="tel:123-456-7890">
                         <svg class="icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                                 <title/>
@@ -198,6 +197,7 @@
                             </g>
                         </svg>
                     </a>
+                    <a href="mailto:dnjzm34 [at] gmail.com" class="button b_general">send email</a>
                 </div>
                 <p>Copyright Sy-Lee 2022</p>
             </div>
