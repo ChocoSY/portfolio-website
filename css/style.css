@@ -49,12 +49,7 @@ body {
     line-height: 1.7;
 }
 
-footer {
-    background-color: #f0e4d8;
-    padding: 10px;
-    margin: 10px;
-    border-top: 3px solid #0F4C81;
-}
+
 
 h1 {
     font-size: 2.25em;
@@ -197,13 +192,14 @@ LAYOUT STYLING
 #self_intro_short {
     background-color: #f9eee0;
     padding: 20px 20px;
-    display: inline-block;
-    width: 100%
+    width: 100%;
+    text-align:center;
 }
-#self_intro_short h2 {
-    text-align: center;
-    /* margin: 0;
-    padding: 0.67em 0; */
+#self_intro_short span {
+    display: block;
+    font-size: 0.875em;
+    font-weight:600;
+    line-height: 1.5;
 }
 
 nav > ul {
@@ -229,17 +225,6 @@ nav > ul > li > a {
     font-weight: 900;
 }
 
-.project_tile {
-    padding: 0 16px 16px 16px;
-    display: inline-block;
-    max-width: 450px;
-}
-.project_thumbnail {
-    display: inline-block;
-    max-width: 767px;
-    padding: 10px 8px 5px 8px;
-}
-
 /* About Page*/
 .question_tile {
     background-color: #fff8ef;
@@ -258,10 +243,17 @@ nav > ul > li > a {
     max-width: 350px;
     margin: 0 40px 0 0;
 }
+footer {
+    background-color: #f0e4d8;
+    padding: 10px;
+    margin: 10px;
+    border-top: 3px solid #0F4C81;
+}
 
 /*breakpoints*/
 
 @media only screen and (min-width: 640px) {
+    /*index page*/
     header {
         text-align: unset;
         padding: 20px 0 13px;
@@ -272,5 +264,20 @@ nav > ul > li > a {
     }
     main {
         padding-top: 99px;
+    }
+    #self_intro_short span {
+        display: block;
+        font-size: 0.875em;
+        font-weight:600;
+        line-height: 1.5;
+    }
+    [class*="col-"] {
+        width: 50%;
+        float: left;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
     }
 }
