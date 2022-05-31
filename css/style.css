@@ -223,11 +223,7 @@ nav > ul > li > a {
     font-weight: 900;
     font-size: min(6vw, 25px);
 }
-.menu {
-    /* display: inline-block; */
-    /* text-align: right; */
-    float: right;
-}
+
 .menu_current {
     color: #0F4C81;
     font-weight: 900;
@@ -263,3 +259,18 @@ nav > ul > li > a {
     margin: 0 40px 0 0;
 }
 
+/*breakpoints*/
+
+@media only screen and (min-width: 640px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+    nav {
+        width: auto;
+        float: right;
+    }
+    main {
+        padding-top: 99px;
+    }
+}
