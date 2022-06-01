@@ -150,6 +150,7 @@ a:hover, a:active {
     background-color: #f0e4d8;
     color: #0F4C81;
     border-bottom: 3px solid #b3aaa1; 
+    margin-bottom: 16px;
 }
 /* .view_more:hover {
     background-color: #FBA01D;
@@ -192,6 +193,7 @@ LAYOUT STYLING
 .project_row {
     background-color: #fff8ef;
     border-radius:10px;
+    padding: 10px;
 }
 
 #self_intro_short {
@@ -240,15 +242,12 @@ nav > ul > li > a {
 .skill_tile {
     background-color: #fff8ef;
     border-radius:10px;
-    padding: 16px;
-    margin: 25px 0;
+    padding: 8px;
+    margin: 8px 0;
 }
-.skill_points {
-    display: inline-block;
-    max-width: 350px;
-    margin: 0 40px 0 0;
+.subtitle h2 {
+    margin-bottom: 0;
 }
-
 
 
 /*breakpoints*/
