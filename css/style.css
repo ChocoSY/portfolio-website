@@ -115,10 +115,12 @@ img {
     padding: 5px;
 }
 
-.my_photo {
+.my_photo :center { /*why is this working?*/
     width: 30%;
     height: 30%;
     min-width: 290px;
+    /* text-align: center; */
+    /* place-content: center; */
 }
 
 a {
@@ -297,6 +299,9 @@ nav > ul > li > a {
         margin-left: auto;
         margin-right: auto;
     }
+    .col-md-6 {
+        width: 100%;
+    }
     .col-lg-7 {
         width: 70%;
         float: left;
@@ -312,4 +317,8 @@ nav > ul > li > a {
         clear: both;
         display: table;
     }
+    #contact {
+        width: 100%;
+    }
+    
 }
