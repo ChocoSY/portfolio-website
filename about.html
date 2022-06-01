@@ -29,17 +29,17 @@
 
         <main>
             <div class="container">
-                <div class="subtitle">
-                    <h2>About Me</h2>
-                </div>
                 <div>
                     <picture>
-                        <source srcset="img/ponyo016.jpg" media="(max-width:767px" class="my_photo">
+                        <source srcset="img/ponyo016.jpg" media="(max-width:767px)" class="my_photo">
                         <img src="img/ponyo016.jpg" alt="Sy L's profile photo" class="my_photo">
                     </picture>
-                    <div>
-                        <div id="self_intro">
+                    <div class="row">
+                        <div id="self_intro" class="col-lg-7">
                             <!-- <h2>My Story</h2> -->
+                            <div class="subtitle">
+                                <h2>About Me</h2>
+                            </div>
                             <div class="question_tile">
                                 <h5>Where I am based</h5>
                                 <p>
@@ -75,7 +75,7 @@
                             </div>
                         </div>
 
-                        <div id="my_skills">
+                        <div class="col-lg-5">
                             <div class="subtitle">
                                 <h2>Skills & Tools</h2>
                             </div>
@@ -101,16 +101,13 @@
                 </div>
             </div>
         </main>
-
         <footer id="contact">
             <div class="container">
                 <h2>Get In Touch</h2>
                 <p>
                     If my works are interesting and want to know more, 
-                    <br>please contact me through the links below.</p>
-                <div class="row">
-                    <a href="mailto:dnjzm34 [at] gmail.com" class="button b_general">send email</a>
-                </div>
+                    please contact me through the links below.
+                </p>
                 <div class="row">
                     <a href="tel:123-456-7890">
                         <svg class="icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -159,8 +156,9 @@
                             </g>
                         </svg>
                     </a>
+                    <a href="mailto:dnjzm34 [at] gmail.com" class="button b_general">send email</a>
+                    <p>Copyright Sy-Lee 2022</p>
                 </div>
-                <p>Copyright Sy-Lee 2022</p>
             </div>
         </footer>
     </body>
