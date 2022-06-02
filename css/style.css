@@ -85,7 +85,7 @@ h5 {
     margin: 0;
 }
 .logo_font {
-    font-size: 1.75em;
+    font-size: 2vw;
     display: inline-block;
 }
 /* h6 {
@@ -148,11 +148,12 @@ a:hover, a:active {
     transition: 0.2s opacity;
 }
 
-.view_more, .view_more:visited {
+.view_more,.view_more:visited {
     background-color: #f0e4d8;
     color: #0F4C81;
     border-bottom: 3px solid #b3aaa1; 
     margin-bottom: 16px;
+    
 }
 /* .view_more:hover {
     background-color: #FBA01D;
@@ -160,11 +161,12 @@ a:hover, a:active {
     text-decoration:none;
     border-bottom: 3px solid #a46814; 
 } */
-.view_more:hover .view_more:active {
+.view_more:hover, .view_more:active {
     background-color:  #272b2e;
     color: #f0e4d8;
     text-decoration:none;
-    border-bottom: 3px solid  #b3aaa1; 
+    border-bottom: 3px solid #b3aaa1;
+    opacity: 0.8;
 } 
 
 
@@ -176,11 +178,13 @@ a:hover, a:active {
     background-color: #0F4C81;
     color: #ffffff;
     text-decoration:none;
-    border-bottom: 3px solid #3c87cd; 
+    border-bottom: 3px solid #3c87cd;
+    opacity: 0.8;
 }
 
 .b_cv {
     margin: 8px 0 20px 0;
+    text-align: center;
 }
 /*
 LAYOUT STYLING
@@ -226,12 +230,13 @@ nav > ul > li > a {
     padding:0 7px;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: min(6vw, 25px);
+    font-size: 1em;
 }
 
+/*contact button color change*/
 .menu_current {
     color: #0F4C81;
-    font-weight: 900;
+    /* font-weight: 900; */
 }
 
 /* About Page*/
@@ -244,7 +249,7 @@ nav > ul > li > a {
 .skill_tile {
     background-color: #fff8ef;
     border-radius:10px;
-    padding: 8px;
+    padding: 16px;
     margin: 8px 0;
 }
 .subtitle h2 {
@@ -283,19 +288,14 @@ nav > ul > li > a {
         clear: both;
         display: table;
     }
-}
-
-@media only screen and (min-width: 1024px) {
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
+    .skill_tile {
+        padding: 8px;
     }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1024px) {
     .container {
-        max-width: 1200px;
+        max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -317,8 +317,19 @@ nav > ul > li > a {
         clear: both;
         display: table;
     }
-    #contact {
-        width: 100%;
+    #self_intro h2 {
+        text-align: left;
+        margin-left: 16px;
     }
-    
+    #skill_title h2 {
+        text-align: left;
+        margin-left: 16px;
+    }
+    .skill_tile {
+        padding: 8px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+   
 }
