@@ -332,10 +332,22 @@ nav > ul > li > a {
 
 @media only screen and (min-width: 1440px) {
    
+}
+
 /* CSS Animation */
 .berlin-illustration {
     width: 100%;
     max-width: 100%;
     height: auto;
 }
+
+@keyframes color-change {
+    0% {fill: #edc665;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+}
+.sun {
+    animation: 4s color-change infinite alternate linear;
+  }
+
 }
