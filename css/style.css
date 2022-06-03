@@ -365,3 +365,21 @@ nav > ul > li > a {
 .cloud-back {
     animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
+/*Animation 2 UBC*/
+.ubc_logo {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.cls-1 {
+    clip-path: url(#clip-ubcletter);
+}
+
+.cls-2 {
+    fill: #002145;
+}
+
+.cls-3 {
+    fill: #fff;
+}
