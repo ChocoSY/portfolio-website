@@ -373,13 +373,63 @@ nav > ul > li > a {
     height: auto;
 }
 .cls-1 {
-    clip-path: url(#clip-ubcletter);
+    clip-path: url(#clip-ubclettershadow);
 }
-
-.cls-2 {
-    fill: #002145;
-}
-
-.cls-3 {
+.cls-4 {
     fill: #fff;
 }
+
+
+@keyframes u-move {
+    from {transform: translate(44px, 100px);}
+    to {transform: translate(44px, 50px);}
+}
+.u {
+    animation: 0.5s u-move infinite alternate ease;
+}
+@keyframes b-move {
+    from {transform: translate(409px, 281px);}
+    to {transform: translate(409px, 231px);}
+}
+.b {
+    animation: 0.5s b-move infinite alternate ease;
+}
+@keyframes c-move {
+    from {transform: translate(494px, 100px);}
+    to {transform: translate(494px, 50px);}
+}
+.c {
+    animation: 0.5s c-move infinite alternate ease;
+}
+
+
+@keyframes u-shadow-move {
+    from {transform: scale(1) translate(44px, 320px);}
+    to {transform: scale(0.25)translate(223px, 320px);}
+    
+}
+.u-shadow {
+    animation: 0.5s u-shadow-move infinite alternate ease;
+    transform-origin: 44px 320px;
+}
+
+@keyframes b-shadow-move {
+    from {transform: scale(1) translate(269px, 320px);}
+    to {transform: scale(0.25)translate(450px, 320px);}
+    
+}
+.b-shadow {
+    animation: 0.5s b-shadow-move infinite alternate ease;
+    transform-origin: 269px 320px;
+}
+
+@keyframes c-shadow-move {
+    from {transform: scale(1) translate(494px, 320px);}
+    to {transform: scale(0.25)translate(673px, 320px);}
+    
+}
+.c-shadow {
+    animation: 0.5s c-shadow-move infinite alternate ease;
+    transform-origin: 494px 320px;
+}
+
