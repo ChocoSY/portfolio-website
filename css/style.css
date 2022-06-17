@@ -115,10 +115,9 @@ img {
     padding: 5px;
 }
 
-.my_photo :center { /*why is this working?*/
-    width: 30%;
-    height: 30%;
-    min-width: 290px;
+.my_photo { /*why is this working?*/
+    max-width: 345px;
+    max-height: 400px;
     /* text-align: center; */
     /* place-content: center; */
 }
