@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="https://kit.fontawesome.com/25459cb7fe.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta charset="utf-8">
         <link rel="icon" href="img/logo.png">
@@ -13,22 +14,34 @@
     <body>
         <header>
             <div class="container">
-                <a href="index.html" class="logo_font">
+                <!--Regular menu for larger screen section-->
+                <!-- <a href="index.html" class="logo_font">
                     <img src="img/logo.png" alt="Soyeon's Portfolio" class="logo">
                     Soyeon Lee 
                 </a>
-
-                <!--Regular menu for larger screen section-->
                 <nav>
                     <ul>
                         <li><a href="index.html" class="menu_current">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
-                </nav>
-                
-                <!--Hamburger menu section-->
+                </nav> -->
 
+                <!--Hamburger menu section-->
+                <div id="myNavtoggle" class="navtoggle">
+                    <a href="index.html" class="logo_font">
+                        <img src="img/logo.png" alt="Soyeon's Portfolio" class="logo">
+                        Soyeon Lee 
+                    </a>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" class="menu_current">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
 
