@@ -4,26 +4,32 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="https://kit.fontawesome.com/25459cb7fe.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta charset="utf-8">
-        <link rel="icon" href="img/logo.png">
+        <link rel="icon" href="img/logoWOname.png">
         <title>SY's project_SLAN Budget app</title>
     </head>
 
     <body>
         <header>
             <div class="container">
-                <a href="#" class="logo_font">
-                    <img src="img/logo.png" alt="Soyeon's Portfolio" class="logo">
-                    SY Lee
-                </a>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+                <!--???How do I make this height work without adding it here???-->
+                <!--Hamburger menu section-->
+                <div id="myNavtoggle" class="navtoggle">
+                    <a href="index.html" class="logo_font">
+                        <img src="img/logoWhiteBG.png" alt="Soyeon's Portfolio" class="logo">
+                    </a>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" class="menu_current">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                             <!--This is anchor link, need onclick action (activate JS)-->
+                            <li><a href="#contact" class="contactSttc" onclick="menuToggle()">Contact</a></li>
+                            <li><a href="javascript:void(0);" class="iconHmb" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
 
@@ -31,8 +37,7 @@
             <div class="container">
                 <div id="slan_intro">
                     <div>
-                        <h2>SLAN</h2>
-                        <h3>Budget APP</h3>
+                        <h2>Budget APP</h2>
                     </div>
                     <div>
                         <picture>
@@ -40,13 +45,12 @@
                             <img src="img/slan/slan_intro@2x.jpg" alt="SLAN Budget app Intro">
                         </picture>
                     </div>
-                    <div>
+                    <div class="projectIntroShort">
                         <p>
-                            SLAN is a handy budget app. 
-                            <br>I did not follow traditional path of low-mid-high-fidelity wireframes for this project, instead,
-                            <br> I started from 5 low-fidelity wireframes and 
-                            ended up as 12 high-fidelity screens 
-                            which low fidelity wireframes of other 7 screens do not exist. 
+                            <span style="font-weight: 600">SLAN</span> is a handy budget app. 
+                            <br> I had a concrete idea about this project from the beginning,
+                            therefore, I started off with 5 low-fidelity wireframes 
+                            and ended up creating 12 high-fidelity wireframes. 
                         </p>
                     </div>
                 </div>
@@ -55,67 +59,79 @@
                     <div>
                         <h3>My Process</h3>
                     </div>
-                    <div>
-                        <picture>
-                            <source srcset="img\slan\ideation.png" media="(max-width=767px)">
-                            <img src="img/slan/ideation.png" alt="SLAN Budget app Ideation">
-                        </picture>
-                        <div>
-                            <h4>IDEATION</h4>
+                    <div class="row projectDetail_row">
+                        <div class="col-md-6 col-lg-7">
+                            <picture>
+                                <source srcset="img\slan\ideation.png" media="(max-width=767px)">
+                                <img src="img/slan/ideation.png" alt="SLAN Budget app Ideation">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <h4 class="grey">IDEATION</h4>
                             <p>
                                 Including the minimum functions requested in the project brief, 
                                 I created user flow and low-fidelity wireframe. 
-                                <br>The minimal functions and elements will give users ease of use. 
-                                <br>Also, it only asks for essential amount of personal information 
+                                The minimal functions and elements will give users ease of use. 
+                                Also, it only asks for essential amount of personal information 
                                 which will make users feel the web app as a reliable one.
                             </p>
                         </div>
-                        
                     </div>
-                    <div>
-                        <picture>
-                            <source srcset="img\slan\wireframes.png" media="(max-width=767px)">
-                            <img src="img/slan/wireframes.png" alt="SLAN Budget app Wireframes">
-                        </picture>
-                        <div>
-                            <h4>WIREFRAMES</h4>
+
+                    <div class="row projectDetail_row">
+                        <div class="col-md-6 col-lg-7">
+                            <picture>
+                                <source srcset="img\slan\wireframes.png" media="(max-width=767px)">
+                                <img src="img/slan/wireframes.png" alt="SLAN Budget app Wireframes">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <h4 class="grey">WIREFRAMES</h4>
                             <p>
-                                From the low-fidelity wireframes, I developed them to mid-fidelity wireframes which I can see the direction of the overall screens I want to design.
+                                From the low-fidelity wireframes, I developed them to mid-fidelity wireframes 
+                                which I can see the direction of the overall screens I want to design.
                             </p>
                         </div>
-                        
                     </div>
-                    <div>
-                        <picture>
-                            <source srcset="img\slan\design.png" media="(max-width=767px)">
-                            <img src="img/slan/design.png" alt="SLAN Budget app Design">
-                        </picture>
-                        <div>
-                            <h4>DESIGN</h4>
+
+                    <div class="row projectDetail_row">
+                        <div class="col-md-6 col-lg-7">
+                            <picture>
+                                <source srcset="img\slan\design.png" media="(max-width=767px)">
+                                <img src="img/slan/design.png" alt="SLAN Budget app Design">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <h4 class="grey">DESIGN</h4>
                             <p>
                                 To imply seriousness and simpleness, I set black and white as the main colors with some other accent colors 
-                                <br>such as sand color representing gold and red and green representing money going out and in. 
-                                <br>For typography, I chose sans-serif, medium kerning font. 
-                                <br>The logo of this web app represents the progress and saving where dotted half rim represents the progress and the solid half rim represents completeness.
-                                <br>'S' at the center has two meaning, one, dollar sign, $ and second, 'saving'.
+                                such as sand color representing gold and red and green representing money going out and in. 
+                                For typography, I chose sans-serif, medium kerning font. 
+                                The logo of this web app represents the progress and saving where dotted half rim represents the progress and the solid half rim represents completeness.
+                                'S' at the center has two meaning, one, dollar sign, $ and second, 'saving'.
                             </p>
                         </div>
-                        
                     </div>
-                    <div>
-                        <picture>
-                            <source srcset="img\slan\slan_mockup.png" media="(max-width=767px)">
-                            <img src="img/slan/slan_mockup@2x.png" alt="SLAN Budget app Mockup">
-                        </picture>
-                        <div>
-                            <h4>PROTOTYPE</h4>
-                            <span>
-                                If you want to further experience this app,  
-                            </span>
-                            <a href="https://xd.adobe.com/view/eed0cc23-d5f2-46c7-84ef-699d5ab8164c-bb83/?fullscreen" target="_blank"> SLAN_Prototype</a>
+
+                    <div  class="row projectDetail_row">
+                        <div class="col-md-6 col-lg-7">
+                            <picture>
+                                <source srcset="img\slan\slan_mockup.png" media="(max-width=767px)">
+                                <img src="img/slan/slan_mockup@2x.png" alt="SLAN Budget app Mockup">
+                            </picture>
                         </div>
-                        
+                        <div class="col-md-6 col-lg-5">
+                            <h4 class="grey">PROTOTYPE</h4>
+                            <span>
+                                If you want to know more about the process of the project development, click
+                                <a href="https://www.behance.net/gallery/142181593/SLAN_Budget-web-app" target="_blank">SLAN_Project Report</a>
+                                <br>
+                                <br> If you want to further experience this app, click
+                                <a href="https://xd.adobe.com/view/eed0cc23-d5f2-46c7-84ef-699d5ab8164c-bb83/?fullscreen" target="_blank"> SLAN_Prototype</a>
+                            </span>
+                        </div>
                     </div>
+
                 </div>    
             </div>
         </main>
@@ -182,6 +198,12 @@
                 <p>Copyright Sy-Lee 2022</p>
             </div>
         </footer>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+        </script>
+        <script src="js/scripts.js"></script>
     </body>
 
 </html>
