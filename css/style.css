@@ -74,7 +74,7 @@ h3 {
     line-height: 1.5;
 }
 h4 {
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: 900;
     margin: 16px 0;
 }
@@ -127,7 +127,21 @@ a {
     font-weight: 500;
     text-decoration: none;
 }
-
+.smallTitle {
+    margin-top: 50px;
+}
+.orange {
+    color: #D68100;
+}
+.blue {
+    color: #007BC7;
+}
+.indigo {
+    color: #3F4AE2;
+}
+.grey {
+    color: #454545;
+}
 
 /*Button Style*/
 
@@ -182,8 +196,12 @@ LAYOUT STYLING
 .row {
     margin: 25px 0;
 }
-.project_row {
+.projectTitle_row {
     background-color: #fff8ef;
+    border-radius:10px;
+    padding: 10px;
+}
+.projectDetail_row {
     border-radius:10px;
     padding: 10px;
 }
@@ -200,7 +218,9 @@ LAYOUT STYLING
     font-weight:600;
     line-height: 1.5;
 }
-
+.projectIntroShort {
+    text-align: center;
+}
 
 nav > ul {
     list-style-type: none;
@@ -304,6 +324,7 @@ nav > ul > li > a {
         width: 50%;
         float: left;
         padding: 10px;
+        margin: auto auto;
     }
     .row::after {
         content: "";
@@ -323,11 +344,13 @@ nav > ul > li > a {
     }
     .col-md-6 {
         width: 100%;
+        margin: auto auto;
     }
     .col-lg-7 {
         width: 70%;
         float: left;
         padding: 10px;
+        margin: auto auto;
     }
     .col-lg-5 {
         width: 30%;
