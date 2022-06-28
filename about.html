@@ -19,7 +19,7 @@
                     <a href="index.html" class="logo_font">
                         <img src="img/logoWhiteBG.png" alt="Soyeon's Portfolio" class="logo">
                     </a>
-                    <nav>
+                    <nav id="menu">
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html" class="menu_current">About</a></li>
@@ -35,12 +35,18 @@
         <main>
             <div class="container">
                 <div>
-                    <picture>
-                        <source srcset="img/profile.jpg" media="(max-width:767px)" class="my_photo">
-                        <img src="img/profile.jpg" alt="Sy L's profile photo" class="my_photo">
-                    </picture>
                     <div class="row">
-                        <div id="self_intro" class="col-lg-7">
+                        <div class="col-lg-5 floatL">
+                            <picture>
+                                <source srcset="img/profile.jpg" media="(max-width:767px)" class="my_photo">
+                                <img src="img/profile.jpg" alt="Sy L's profile photo" class="my_photo">
+                            </picture>
+                            <div class="itemCenter">
+                                <a href="SYLee_CV.pdf" target="_blank" class="button widthFullButton view_cv">View CV</a>
+                            </div>
+                        </div>
+                        
+                        <div id="self_intro" class="col-lg-7 floatR">
                             <!-- <h2>My Story</h2> -->
                             <div class="subtitle">
                                 <h2>About Me</h2>
@@ -48,39 +54,39 @@
                             <div class="question_tile">
                                 <h5>Where I am based</h5>
                                 <p>
-                                    I am based in Canada BC currently. I was born and grew up in Korea.
-                                </p>
-                            </div>
-                            <div class="question_tile">
-                                <h5>How I spend my free time</h5>
-                                <p>
-                                    I spend most of my free time on journaling which helps me organize my thoughts and feelings.
-                                    <br>When I do not feel like wirting, I binge watch Netflix dramas. 
-                                    I prefer drama to movie since it describes each character's feeling deeper.
-                                </p>
-                            </div>
-                            <div class="question_tile">
-                                <h5>Fun fact about me</h5>
-                                <p>
-                                    I am diving into a digital world by developing my skill in UI/UX. 
-                                    <br>However, I love pens and papers. 
-                                    One of the ways I relieve my stress is doing stationery shopping. 
+                                    I was born in Korea and I am based in BC Canada currently.
                                 </p>
                             </div>
                             <div class="question_tile">
                                 <h5>My professional experience</h5>
                                 <p>
-                                    I studied mathematics at university because I loved (and I still love) dealing with numbers and wanted to become a teacher. 
-                                    <br> While majoring in Mathematics, I studied Japanese as well, as I've been loving their stationeries since pre-school. 
-                                    <br> With some level of knowledge in Mathematics and Japanese, I have experience of tutoring both private and public in those fields. 
+                                    I majored in Mathematics, BSc at University of British Columbia.
+                                    I chose mathematics as main because I loved (and I still love) dealing with numbers and wanted to become a teacher. 
+                                    <br> While majoring in Mathematics, I minored in Japanese language as well.
                                 </p>
                             </div>
-                            <div class="b_cv">
-                                <a href="SYLee_CV.pdf" target="_blank" class="button view_more">View CV</a>
+                            <div class="question_tile">
+                                <h5>How I spend my free time</h5>
+                                <p>
+                                    I love singing and playing musical instruments.
+                                    When I was in Japan, I used to go to karaoke every weekend.
+                                    I have relative pitch which I got from the long period of exposure to musical instruments.
+                                    During free time, I like playing the piano and the flute guessing the notes of the songs I know.
+                                </p>
                             </div>
+                            <div class="question_tile">
+                                <h5>Fun fact about me</h5>
+                                <p>
+                                    I've had deep interest in stationeries since I entered elementery school.
+                                    And that interest made me carry a notebook and a pen any time and any where.
+                                    I like recording every single moment of my life into a written form.
+                                    I organize my thoughts and feelings by jotting them down, doodling, and decorating pages with craft items.
+                                </p>
+                            </div>
+                            
                         </div>
 
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 floatL widthFull">
                             <div id="skill_title" class="subtitle">
                                 <h2>Skills & Tools</h2>
                             </div>
@@ -102,6 +108,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -161,11 +168,12 @@
                             </g>
                         </svg>
                     </a>
-                    <a href="mailto:dnjzm34 [at] gmail.com" class="button b_general">send email</a>
+                    <a href="mailto:dnjzm34@gmail.com" class="button b_general">send email</a>
                     <p>Copyright Sy-Lee 2022</p>
                 </div>
             </div>
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>
