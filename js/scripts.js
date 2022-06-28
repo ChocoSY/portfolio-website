@@ -15,3 +15,9 @@ function menuToggle() {
     }
     
 }
+
+$('#menu ul li a').on('click', function(){
+    $('#menu ul li a.menu_current').removeClass('menu_current');
+    $(this).addClass('menu_current');
+});
+
