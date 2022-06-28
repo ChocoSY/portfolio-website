@@ -20,7 +20,7 @@
                     <a href="index.html" class="logo_font">
                         <img src="img/logoWhiteBG.png" alt="Soyeon's Portfolio" class="logo">
                     </a>
-                    <nav>
+                    <nav id="menu">
                         <ul>
                             <li><a href="index.html" class="menu_current">Home</a></li>
                             <li><a href="about.html">About</a></li>
@@ -41,7 +41,7 @@
                     </div>
                     <div>
                         <picture>
-                            <source srcset="img/mocord/mocord_intro.jpg" media="(max-width=767px)">
+                            <source srcset="img/mocord/mocord_intro.jpg" media="(max-width:767px)">
                             <img src="img/mocord/mocord_intro.jpg" alt="MoCord Diary app Intro">
                         </picture>
                     </div>
@@ -56,17 +56,18 @@
                 
                 <div id="mocord_process">
                     <div> 
-                        <h3>My Process</h3>
+                        <h3>Project Develop Summary</h3>
                     </div>
-                    <div>
-                        <div class="smallTitle indigo">
-                            <h4>IDEATION</h4>
+                    <div class="row projectDetail_row">
+                        <div class="col-md-6 col-lg-7">
+                            <picture>
+                                <source srcset="img/mocord/mocord_research.png" media="(max-width:767px)">
+                                <img src="img/mocord/mocord_research.png" alt="MoCord Diary app Ideation">
+                            </picture>
                         </div>
-                        <picture>
-                            <source srcset="img/mocord/mocord_research.png" media="(max-width=767px)">
-                            <img src="img/mocord/mocord_research.png" alt="MoCord Diary app Ideation">
-                        </picture>
-                        <div>
+
+                        <div class="col-md-6 col-lg-5">
+                            <h4 class="indigo">IDEATION</h4>
                             <p>
                                 Even though a lot of note takings are turning into digital form,
                                 there are still quite large amount of people who insist on using paper form.
@@ -76,15 +77,15 @@
                         </div>
                         
                     </div>
-                    <div>
-                        <div class="smallTitle indigo">
-                            <h4>WIREFRAMES</h4>
+                    <div class="row projectDetail_row">
+                        <div class="col-md-6 col-lg-7">
+                            <picture>
+                                <source srcset="img/mocord/mocord_ideation.png" media="(max-width:767px)">
+                                <img src="img/mocord/mocord_ideation.png" alt="MoCord Diary app Wireframes">
+                            </picture>
                         </div>
-                        <picture>
-                            <source srcset="img/mocord/mocord_ideation.png" media="(max-width=767px)">
-                            <img src="img/mocord/mocord_ideation.png" alt="MoCord Diary app Wireframes">
-                        </picture>
-                        <div>
+                        <div class="col-md-6 col-lg-5">
+                            <h4 class="indigo">WIREFRAMES</h4>
                             <p>
                                 With clear user flow, few low-fidelity wireframes were created, 
                                 following each system's typical outline. 
@@ -94,15 +95,15 @@
                         </div>
                         
                     </div>
-                    <div>
-                        <div class="smallTitle indigo">
-                            <h4>DESIGN</h4>
+                    <div class="row projectDetail_row">
+                        <div class="col-md-6 col-lg-7">
+                            <picture>
+                                <source srcset="img/mocord/mocord_design.png" media="(max-width:767px)">
+                                <img src="img/mocord/mocord_design.png" alt="MoCord Diary app Design">
+                            </picture>
                         </div>
-                        <picture>
-                            <source srcset="img/mocord/mocord_design.png" media="(max-width=767px)">
-                            <img src="img/mocord/mocord_design.png" alt="MoCord Diary app Design">
-                        </picture>
-                        <div>
+                        <div class="col-md-6 col-lg-5">
+                            <h4 class="indigo">DESIGN</h4>
                             <p>
                                 The colors and fonts were set based on each system's basic color palette.
                                 Also, most of other design elements follow each system's design rules.
@@ -110,15 +111,15 @@
                         </div>
                         
                     </div>
-                    <div>
-                        <div class="smallTitle indigo">
-                            <h4>PROTOTYPE</h4>
+                    <div class="row projectDetail_row">
+                        <div class="col-md-6 col-lg-7">
+                            <picture>
+                                <source srcset="img/mocord/mocord_screens.png" media="(max-width:767px)">
+                                <img src="img/mocord/mocord_screens.png" alt="MoCord Diary app Mockup">
+                            </picture>
                         </div>
-                        <picture>
-                            <source srcset="img/mocord/mocord_screens.png" media="(max-width=767px)">
-                            <img src="img/mocord/mocord_screens.png" alt="MoCord Diary app Mockup">
-                        </picture>
-                        <div>
+                        <div class="col-md-6 col-lg-5">
+                            <h4 class="indigo">DESIGN</h4>
                             <span>
                                 If you want to know more about the process of the project development, click
                                 <a href="https://www.behance.net/gallery/142180797/Mocord_Diary-App" target="_blank">MoCord_Project Report</a>
@@ -138,7 +139,7 @@
                     <br>please contact me through the links below.
                 </p>
                 <div class="row">
-                    <a href="mailto:dnjzm34 [at] gmail.com" class="button b_general">send email</a>
+                    <a href="mailto:dnjzm34@gmail.com" class="button b_general">send email</a>
                 </div>
                 <div class="row">
                     <a href="tel:123-456-7890">
@@ -192,11 +193,7 @@
                 <p>Copyright Sy-Lee 2022</p>
             </div>
         </footer>
-        <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous">
-        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="js/scripts.js"></script>
     </body>
 
